@@ -1,17 +1,21 @@
-const funcoesMatematicas = require('./funcoes_matematicas');
-const calculadora_idade = require('./calculadora_idade');
-// Exemplo de uso:
-const resultadoSoma = funcoesMatematicas.somar(5, 3);
+//const funcoes_matematicas = require('./funcoes_matematicas');
+import * as funcoes_matematicas from './funcoes_matematicas.js' ;
+
+//Exemplo de uso
+const resultadoSoma = funcoes_matematicas.soma(5, 3);
 console.log(`Resultado da soma: ${resultadoSoma}`);
 
-const resultadoSubtracao = funcoesMatematicas.subtrair(10, 4);
-console.log(`Resultado da subtração: ${resultadoSubtracao}`);
+ const resultadoSubtracao = funcoes_matematicas.subtrai(10, 4);
+ console.log(`Resultado da subtração: ${resultadoSubtracao}`);
 
-const resultadoMultiplicacao = funcoesMatematicas.multiplicar(5, 3);
-console.log(`Resultado da multiplicação: ${resultadoMultiplicacao}`);
+ const resultadoMultiplicacao = funcoes_matematicas.multiplica(6, 7);
+ console.log(`Resultado da multiplicação: ${resultadoMultiplicacao}`);
 
-const resultadoDivisao = funcoesMatematicas.dividir(10, 2);
-console.log(`Resultado da divisão: ${resultadoDivisao}`);
+ const resultadoDivisao = funcoes_matematicas.divide(20, 4);
+ console.log(`Resultado da divisão: ${resultadoDivisao}`);
 
-const mensagemIdade = calculadora_idade.idade("Ana", 1990, 2025);
-console.log(mensagemIdade);
+//const calculadora_idade = require('./calculadora_idade');
+import * as calculadora_idade from './calculadora_idade.js' ;
+//Exemplo de uso
+const idadeLucas = calculadora_idade.idade('Lucas', 2024, 2000);
+console.log(idadeLucas);
