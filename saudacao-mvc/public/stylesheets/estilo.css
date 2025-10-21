@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+  background: #f0f0f0;
+}
+
+h1 {
+  color: #222;
+}
+
+form {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  display: inline-block;
+}
